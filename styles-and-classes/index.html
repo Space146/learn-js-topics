@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Manipulation Tasks</title>
+    <style>
+      .active {
+        color: red;
+      }
+      .hidden {
+        display: none;
+      }
+      .title {
+        color: black;
+      }
+      .card {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      .important {
+        color: purple;
+      }
+      .content::before {
+        content: "Before Pseudo-element";
+        display: block;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="example" class="box">Example Element</div>
+    <div id="button" class="item">Button</div>
+    <div class="menu hidden">Menu</div>
+    <div class="item active">Item 1</div>
+    <div id="header" class="header sticky">Sticky Header</div>
+    <div class="title">Title Text</div>
+    <div id="box" class="box">Box Element</div>
+    <div class="card">Card Element</div>
+    <div class="important">Important Text</div>
+    <div class="content">Content Text</div>
+    <div id="text">Text Element</div>
+    <div class="block">Block Element</div>
+    <div class="block" data-highlight>Highlighted Block</div>
+    <script>
+      // Ваши скрипты будут здесь
+    </script>
+  </body>
+</html>
